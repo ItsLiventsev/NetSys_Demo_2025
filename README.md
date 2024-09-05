@@ -316,6 +316,46 @@ WHEEL_USERS ALL=(ALL;ALL) NOPASSWD: ALL
 
 ## 4. Настройте на интерфейсе HQ-RTR в сторону офиса HQ виртуальный коммутатор:
 
+Для настройки будем использовать виртуальные интерфейсы. Создаем директории для подинтерфейсов .10 и .20
+
+![alt text](image-72.png)
+
+![alt text](image-73.png)
+
+Настраиваем IP-адрес для подинтерфейса .10
+
+![alt text](image-74.png)
+
+![alt text](image-75.png)
+
+Настраиваем файл options для подинтерфейса .10
+
+![alt text](image-76.png)
+
+По заданию сервер HQ-SRV должен находиться в ID VLAN 100
+
+![alt text](image-77.png)
+
+Настраиваем IP-адрес для подинтерфейса .20
+
+![alt text](image-79.png)
+
+По заданию клиент HQ-CLI в ID VLAN 200 
+
+![alt text](image-80.png)
+
+### Создайте подсеть управления с ID VLAN 999
+
+![alt text](image-81.png)
+
+Скопируем файл options из .10
+
+![alt text](image-82.png)
+
+![alt text](image-83.png)
+
+
+
 ## 5. Настройка безопасного удаленного доступа на серверах HQ-SRV и BR-SRV:
 
 apt-get update - обновляем репозитории
