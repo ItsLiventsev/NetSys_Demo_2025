@@ -99,8 +99,7 @@ mcedit /etc/hostname
 
 #### Пример варианта IP-адресации (лучше также сделать в отдельно файлике у себя, чтобы не путаться)
 
-![image](https://github.com/user-attachments/assets/cdd3fc21-e16e-42cf-b054-118f4f41d7ca)
-
+![image](https://github.com/user-attachments/assets/33c33fc0-73b3-4070-88ca-f8b820e795d7)
 
 #### Постановка адресации на ВМ без графического интерфейса
 
