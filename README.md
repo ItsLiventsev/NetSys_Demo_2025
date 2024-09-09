@@ -501,6 +501,10 @@ IP-адрес был получен по DHCP с сервера
 
 ![image](https://github.com/user-attachments/assets/1716034c-a527-4c8c-b3b9-7b1f2446a365)
 
+*если в задании поменяют регион на определенный, то посмотреть список регионов и городов можно тут
+
+![image](https://github.com/user-attachments/assets/3f910af8-f188-4899-9145-aa9b6a8cbffa)
+
 #### Пример заполнения таблицы адресов устройств
 
 ![alt text](image-4.png)
