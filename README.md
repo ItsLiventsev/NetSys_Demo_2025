@@ -447,7 +447,7 @@ apt-get install dhcp-server
 
 Производим настройку*
 
-![alt text](image-88.png)
+![image](https://github.com/user-attachments/assets/26ab99eb-2523-4258-b6ce-1163c9c3d111)
 
 *Некоторые общие параметры сервера DHCP:
 
