@@ -233,15 +233,15 @@ apt-get update - обновление баз данных репозиторие
 
 #### Конфигурация frr для ISP
 
-![alt text](image-46.png)
+![image](https://github.com/user-attachments/assets/e7294794-b7ba-4dcb-95de-0df15e7e0205)
 
 #### Конфигурация frr для HQ-RTR
 
-![alt text](image-47.png)
+![image](https://github.com/user-attachments/assets/75c35f01-de94-4df7-88a2-98c5127f8172)
 
 #### Конфигурация frr для BR-RTR
 
-![alt text](image-48.png)
+![image](https://github.com/user-attachments/assets/6bfd8858-2589-4fda-95c9-ff1fe667e0a2)
 
 ### Включаем IP Forwarding
 
