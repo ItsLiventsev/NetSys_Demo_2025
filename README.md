@@ -249,6 +249,8 @@ mcedit /etc/net/sysctl.conf
 
 Параметр net.ipv4.ip_forward=0 ставим на "1"
 
+Затем пишем - sysctl -p
+
 ![alt text](image-49.png)
 
 ## 3. Создание локальных учетных записей
