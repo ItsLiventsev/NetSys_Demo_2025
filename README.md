@@ -36,6 +36,9 @@ mcedit /etc/hostname
 
 ![alt text](image-5.png)
 
+###  Используйте полное доменное имя (ДОБАВИТЬ СКРИНЫ)
+
+domainname au-team.irpo
 -------------------
 
 ### Настройка IP-адресов
