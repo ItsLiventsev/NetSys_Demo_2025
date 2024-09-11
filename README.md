@@ -58,6 +58,14 @@ mcedit /etc/hostname
 
 ![alt text](image-9.png)
 
+### Настройка DNS в сетевых адаптерах
+
+*делаем настройку на всех машинах кроме ISP
+
+![image](https://github.com/user-attachments/assets/1ed51a91-2b84-4b80-9a10-92861184a729)
+
+![image](https://github.com/user-attachments/assets/734de9aa-e1e1-4c0d-ab85-38116edd3ebc)
+
 #### Корректные сетевые адаптеры для ISP
 
 ![alt text](image-10.png)
