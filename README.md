@@ -637,6 +637,51 @@ mdadm --create --level=5 --raid-devices=3 /dev/md/md0 /dev/sdb /dev/sdc /dev/sdd
 
 *pass. Используется программой fsck для определения того, нужно ли проверять целостность файловой системы. Возможные значения: 0, 1 или 2. 
 
+### Настройте сервер сетевой файловой системы(nfs), в качестве папки общего доступа выберите /raid5/nfs, доступ для чтения и записи для всей сети в сторону HQ-CLI
+
+Обновляем репозитории, устанавливаем пакет nfs-server
+
+![Снимок экрана 2024-09-12 115050](https://github.com/user-attachments/assets/7f818660-51a4-467b-8a4a-b1ed81162eb6)
+
+![Снимок экрана 2024-09-12 115103](https://github.com/user-attachments/assets/4ad9d7c7-0df5-4011-9d46-2fa16b09144d)
+
+Добавляем nfs-server в автозагрузку
+
+![Снимок экрана 2024-09-12 115449](https://github.com/user-attachments/assets/20bf36f4-96a7-4c26-876f-ef7e01c2708a)
+
+Создаем папку nfs на нашем RAID-массиве (обратите внимание, RAID должен быть монтирован в папку /raid5)
+
+![Снимок экрана 2024-09-12 115551](https://github.com/user-attachments/assets/7e2b05f6-56a8-4ac1-ad78-e960a0a526f3)
+
+Производим конфигурацию NFS
+
+![Снимок экрана 2024-09-12 115657](https://github.com/user-attachments/assets/b7b967ae-e26b-4c6f-a9a3-28e9ce0b9551)
+
+![ERj4Y6QDhV7K4vzp_xL1Vd5bIO0CVOHA2xPGtlBebca6K4vcnYSk1iSRrlrMKUeMJYqx_4YNvOU7QPzCqpi3ljQv (1)](https://github.com/user-attachments/assets/bf07304b-9017-4610-bf6a-94dc4baf14ed)
+
+#### На HQ-CLI настройте автомонтирование в папку /mnt/nfs (*доделать)
+
+*Проверяем для теста соединения и монтирование папки вообще
+
+![lNcnwbXPl-m2m4ITkMe409lXfTmYDOSyF1yBuT8CqKPHi5ZbFdlNU0PpUgxlphwrjBunFOHBN2V_ziWzF3B_kllH](https://github.com/user-attachments/assets/ce0a375a-90ca-4ed7-b6ef-ded79112d998)
+
+Пробуем создать файлик
+
+![image](https://github.com/user-attachments/assets/1d5cf5c5-9f99-4a30-9ac6-46ddb80efded)
+
+Видим, что файлик есть
+
+![image](https://github.com/user-attachments/assets/e6157fdb-eb13-4f71-88dc-be5fe0b7c01e)
+
+Для автоматического монтирования на клиенте используем fstab
+
+Добавляем новую запись
+
+![image](https://github.com/user-attachments/assets/04776eb5-5c7f-4c5a-9fd2-f7ece6a606dd)
+
+После перезагрузки, автомонтирование работает
+##### Основные параметры сервера отметьте в отчёте
+
 # Модуль 3 "Эксплуатация объектов сетевой инфраструктуры"
 
 ## Модуль 4 "Вариативная часть" (в разработке)
