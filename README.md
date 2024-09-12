@@ -657,6 +657,8 @@ mdadm --create --level=5 --raid-devices=3 /dev/md/md0 /dev/sdb /dev/sdc /dev/sdd
 
 ![Снимок экрана 2024-09-12 115657](https://github.com/user-attachments/assets/b7b967ae-e26b-4c6f-a9a3-28e9ce0b9551)
 
+/raid5/nfs 192.168.1.0/29(rw,subtree_check,no_root_squash)
+
 ![ERj4Y6QDhV7K4vzp_xL1Vd5bIO0CVOHA2xPGtlBebca6K4vcnYSk1iSRrlrMKUeMJYqx_4YNvOU7QPzCqpi3ljQv (1)](https://github.com/user-attachments/assets/bf07304b-9017-4610-bf6a-94dc4baf14ed)
 
 #### На HQ-CLI настройте автомонтирование в папку /mnt/nfs (*доделать)
