@@ -36,7 +36,7 @@ mcedit /etc/hostname
 
 Сохраняем данные (Esc)
 
-![alt text](image-5.png)
+![image](https://github.com/user-attachments/assets/9c0eef7b-c4c2-45d4-93c0-3d24f79517e6)
 
 ###  Используйте полное доменное имя (ДОБАВИТЬ СКРИНЫ)
 
