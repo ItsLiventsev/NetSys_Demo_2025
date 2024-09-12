@@ -661,7 +661,7 @@ mdadm --create --level=5 --raid-devices=3 /dev/md/md0 /dev/sdb /dev/sdc /dev/sdd
 
 ![ERj4Y6QDhV7K4vzp_xL1Vd5bIO0CVOHA2xPGtlBebca6K4vcnYSk1iSRrlrMKUeMJYqx_4YNvOU7QPzCqpi3ljQv (1)](https://github.com/user-attachments/assets/bf07304b-9017-4610-bf6a-94dc4baf14ed)
 
-#### На HQ-CLI настройте автомонтирование в папку /mnt/nfs (*доделать)
+#### На HQ-CLI настройте автомонтирование в папку /mnt/nfs (*ДОДЕЛАТЬ МОНТИРОВАНИЕ)
 
 *Проверяем для теста соединения и монтирование папки вообще
 
@@ -675,7 +675,7 @@ mdadm --create --level=5 --raid-devices=3 /dev/md/md0 /dev/sdb /dev/sdc /dev/sdd
 
 ![image](https://github.com/user-attachments/assets/e6157fdb-eb13-4f71-88dc-be5fe0b7c01e)
 
-Для автоматического монтирования на клиенте используем fstab
+Для автоматического монтирования на клиенте используем fstab (*ДОДЕЛАТЬ МОНТИРОВАНИЕ)
 
 Добавляем новую запись
 
