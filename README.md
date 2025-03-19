@@ -243,7 +243,7 @@ apt-get update - обновление баз данных репозиторие
 
 *работаем как в обычной Cisco IOS
 
-#### Конфигурация frr для ISP (НЕ ПИСАТЬ НА ИСПЕ, ТОЛЬКО НА HQ-RTR И BR-RTR)
+#### Конфигурация frr для ISP (ПИСАТЬ НА ИСПЕ, HQ-RTR И BR-RTR)
 
 ![image](https://github.com/user-attachments/assets/e7294794-b7ba-4dcb-95de-0df15e7e0205)
 
