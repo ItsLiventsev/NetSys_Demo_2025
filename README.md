@@ -243,6 +243,16 @@ apt-get update - обновление баз данных репозиторие
 
 *работаем как в обычной Cisco IOS
 
+en - режим просмотра
+
+conf t - режим конфигурации
+
+router eigrp 1 - объявляем новый вариант динамической маршрутизации
+
+network .......... - сети смотрим в скрнах, где конфигурация.
+
+network ..........
+
 #### Конфигурация frr для ISP (ПИСАТЬ НА ИСПЕ, HQ-RTR И BR-RTR)
 
 ![image](https://github.com/user-attachments/assets/e7294794-b7ba-4dcb-95de-0df15e7e0205)
@@ -254,6 +264,16 @@ apt-get update - обновление баз данных репозиторие
 #### Конфигурация frr для BR-RTR (10.10 УБИРАТЬ)
 
 ![image](https://github.com/user-attachments/assets/6bfd8858-2589-4fda-95c9-ff1fe667e0a2)
+
+#### Для проверки FRR
+
+en
+
+show ip eigrp topology - посмотреть "видимые" сети
+
+![image](https://github.com/user-attachments/assets/a2eee370-b490-47af-9a05-36205dca2e23)
+
+Должно быть видно все сети с ISP, *ВАЖНО, СЕТИ ОБНОВЛЯЮТСЯ ДО 10 МИНУТ*
 
 ### Включаем IP Forwarding
 
@@ -275,7 +295,9 @@ sysctl net.ipv4.ip_forward=1
 
 useradd - создание пользователя
 
-Ключи к команде тут (НЕ РАБОТАЕТ, ПРАВИТЬ) - https://edu-web.sferum.ru/doc709873984_680191273?hash=QEVZKP4LFyigZ1HPCNL1iOJ9D8rlzuxVD81zyXeBZ0X&dl=G4YDSOBXGM4TQNA%3A1725361377%3AwQXwRHJABAZB6lFf5UFyM5zhJQRdNUCKcEy7aPUVCac&from_module=vkmsg_desktop
+Ключи к команде
+
+![image](https://github.com/user-attachments/assets/cf060a75-3fcc-4262-94ae-e611fda0da30)
 
 Создаем пользователея с UID 1010
 
