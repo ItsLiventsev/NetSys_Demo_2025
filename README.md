@@ -8,7 +8,7 @@
 
 #### Топология сети
 
-![alt text](image.png)
+![alt text](screens/image.png)
 
 ### Требования к ресурсам и гостевым ОС
 
