@@ -12,11 +12,11 @@
 
 ### Требования к ресурсам и гостевым ОС
 
-![alt text](image-1.png)
+![alt text](screens/image-1.png)
 
 ### Таблица имен
 
-![alt text](image-3.png)
+![alt text](screens/image-3.png)
 
 ## 1. Произведите базовую настройку устройств
 
@@ -28,15 +28,15 @@
 
 mcedit /etc/hostname
 
-![alt text](nz8pamLPe1ZrVSJCbvAXUFH-roquW76zof9K1VzL_nS6dDjS0qSwbdv-F8syBbeG3ioFo86eBwaWCiQ1y3dFTdo1.jpg)
+![alt text](screens/nz8pamLPe1ZrVSJCbvAXUFH-roquW76zof9K1VzL_nS6dDjS0qSwbdv-F8syBbeG3ioFo86eBwaWCiQ1y3dFTdo1.jpg)
 
 Изменяем данные в файле на имя машины по заданию
 
-![alt text](6CoifrrnG0jRMAXrQNzU9Lbo_dKR6hrf4UpTdEZiQUgOBWURnv3UlIWGNfxsMFgjcfUdrsB5rUirvIyG3ipZPB7_.jpg)
+![alt text](screens/6CoifrrnG0jRMAXrQNzU9Lbo_dKR6hrf4UpTdEZiQUgOBWURnv3UlIWGNfxsMFgjcfUdrsB5rUirvIyG3ipZPB7_.jpg)
 
 Сохраняем данные (Esc)
 
-![image](https://github.com/user-attachments/assets/9c0eef7b-c4c2-45d4-93c0-3d24f79517e6)
+![image](screens/https://github.com/user-attachments/assets/9c0eef7b-c4c2-45d4-93c0-3d24f79517e6)
 
 ###  Используйте полное доменное имя
 
