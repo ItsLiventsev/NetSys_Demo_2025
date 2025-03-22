@@ -36,13 +36,13 @@ mcedit /etc/hostname
 
 Сохраняем данные (Esc)
 
-![image](screens/https://github.com/user-attachments/assets/9c0eef7b-c4c2-45d4-93c0-3d24f79517e6)
+![image](https://github.com/user-attachments/assets/9c0eef7b-c4c2-45d4-93c0-3d24f79517e6)
 
 ###  Используйте полное доменное имя
 
 domainname au-team.irpo
 
-![image](screens/https://github.com/user-attachments/assets/612ba191-b871-4020-9163-8a9a0532e199)
+![image](https://github.com/user-attachments/assets/612ba191-b871-4020-9163-8a9a0532e199)
 
 *Имена хостов и т.п.
 
