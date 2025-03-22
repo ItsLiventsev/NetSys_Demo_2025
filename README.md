@@ -2,6 +2,8 @@
 
 Базовый стенд представлен по сссылке - https://disk.yandex.ru/d/Qfry02DM_LYcGA (вложенный ахрив, открывать через 7-ZIP) (Стенд для добавления в VMware Player, вложенная виртуализация через ESXi). (в стенде могут быть изменения)
 
+Для установки стенда через скрипт PVE (https://disk.yandex.ru/d/uT7Z3o0uaSBpjg), инструкция тут - https://itsliventsev.yonote.ru/share/548e46da-9cc5-41a8-9f77-0d4c7134ca73/doc/skript-dlya-avtorazvertyvaniya-stenda-de-2025-adm-na-pve-DT85xpRqXT
+
 # Модуль 1 "Настройка сетевой инфраструктуры"
 
 ## Вводная информация по модулю 1
