@@ -42,7 +42,7 @@ mcedit /etc/hostname
 
 domainname au-team.irpo
 
-![image](https://github.com/user-attachments/assets/612ba191-b871-4020-9163-8a9a0532e199)
+![image](screens/https://github.com/user-attachments/assets/612ba191-b871-4020-9163-8a9a0532e199)
 
 *Имена хостов и т.п.
 
@@ -54,21 +54,21 @@ domainname au-team.irpo
 
 Для проверки виртуальных сетевых адаптеров прописываем на ВМ команду - ip -c a
 
-![alt text](image-6.png)
+![alt text](screens/image-6.png)
 
 Если на ВМ не хватает сетевых адаптеров по схеме, то добавляем новые в настройках ВМ.
 
 Правой кнопкой по окну ВМ или в списке ВМ и открываем Edit Setings
 
-![alt text](image-7.png)
+![alt text](screens/image-7.png)
 
 В меню выбираем Add network adapter
 
-![alt text](image-8.png)
+![alt text](screens/image-8.png)
 
 Далее проставляем сети в соответствии с заданием (схемой сети)
 
-![alt text](image-9.png)
+![alt text](screens/image-9.png)
 
 ### Настройка DNS в сетевых адаптерах
 
@@ -80,31 +80,31 @@ domainname au-team.irpo
 
 #### Корректные сетевые адаптеры для ISP
 
-![alt text](image-10.png)
+![alt text](screens/image-10.png)
 
 #### Корректные сетевые адаптеры для BR-RTR
 
-![alt text](image-11.png)
+![alt text](screens/image-11.png)
 
 #### Корректные сетевые адаптеры для BR-SRV
 
-![alt text](image-12.png)
+![alt text](screens/image-12.png)
 
 #### Корректные сетевые адаптеры для CLI
 
-![alt text](image-13.png)
+![alt text](screens/image-13.png)
 
 #### Корректные сетевые адаптеры для HQ-RTR
 
-![alt text](image-14.png)
+![alt text](screens/image-14.png)
 
 #### Корректные сетевые адаптеры для BR-DC
 
-![alt text](image-15.png)
+![alt text](screens/image-15.png)
 
 #### Корректные сетевые адаптеры для HQ-SRV
 
-![alt text](image-16.png)
+![alt text](screens/image-16.png)
 
 --------------------
 
@@ -125,7 +125,7 @@ domainname au-team.irpo
 
 Создаем директории для новых адаптеров, по названию адаптеров*
 
-![alt text](image-18.png)
+![alt text](screens/image-18.png)
 
 *названия адаптеров смотрим в ip -c a
 
@@ -133,69 +133,69 @@ domainname au-team.irpo
 
 Копируем файл конфигурации сетевого адаптера ИЗ ENS192 в каждую директорию сетевого адаптера
 
-![alt text](image-19.png)
+![alt text](screens/image-19.png)
 
 #### Выдача IP-адреса по DHCP
 
-![alt text](image-20.png)
+![alt text](screens/image-20.png)
 
-![alt text](image-21.png)
+![alt text](screens/image-21.png)
 
-![alt text](image-22.png)
+![alt text](screens/image-22.png)
 
-![alt text](image-23.png)
+![alt text](screens/image-23.png)
 
 #### Выдача статических адресов
 
-![alt text](image-24.png)
+![alt text](screens/image-24.png)
 
-![alt text](image-25.png)
+![alt text](screens/image-25.png)
 
 #### Настройка основного шлюза для статики
 
-![alt text](image-27.png)
+![alt text](screens/image-27.png)
 
-![alt text](image-28.png)
+![alt text](screens/image-28.png)
 
 Чтобы обновить данные - перезапускаем сервис сети
 
-![alt text](image-26.png)
+![alt text](screens/image-26.png)
 
 Видим по итогу, что сетевые адаптеры обновились и выдались адреса
 
-![alt text](image-29.png)
+![alt text](screens/image-29.png)
 
 Для примеения имени хоста - перезагружаем ВМ
 
-![alt text](image-30.png)
+![alt text](screens/image-30.png)
 
-![alt text](image-31.png)
+![alt text](screens/image-31.png)
 
 -------------------
 
 #### Пример настройки для HQ-SRV
 
-![alt text](image-32.png)
+![alt text](screens/image-32.png)
 
 #### Пример настройки для BR-SRV
 
-![alt text](image-33.png)
+![alt text](screens/image-33.png)
 
 #### Пример настройки для HQ-RTR
 
-![alt text](image-34.png)
+![alt text](screens/image-34.png)
 
 #### Пример настройки для CLI
 
-![alt text](image-35.png)
+![alt text](screens/image-35.png)
 
 #### Пример настройки для BR-R
 
-![alt text](image-36.png)
+![alt text](screens/image-36.png)
 
 
 
-![alt text](image-37.png)
+![alt text](screens/image-37.png)
 
 --------------------
 
@@ -208,38 +208,38 @@ domainname au-team.irpo
 
 apt-get update - обновление баз данных репозиториев
 
-![alt text](image-38.png)
+![alt text](screens/image-38.png)
 
 Установка пакета FRR - для работы маршрутизации - apt-get install frr
 
-![alt text](image-39.png)
+![alt text](screens/image-39.png)
 
 
 Добавляем сервис frr в автозагрузку - systemctl enable —now frr
 
-![alt text](image-40.png)
+![alt text](screens/image-40.png)
 
 *Для проверки работы пакета - systemctl status
 
-![alt text](image-41.png)
+![alt text](screens/image-41.png)
 
 ### Конфигурация frr
 
 Включаем OSPF и EIGRP
 
-![alt text](image-42.png)
+![alt text](screens/image-42.png)
 
 Ставим "yes" напротив ospfd и eigrpd - С МАЛЕНЬКОЙ БУКВЫ
 
-![alt text](image-43.png)
+![alt text](screens/image-43.png)
 
 Перезапускаем сервис для применения настройки
 
-![alt text](image-44.png)
+![alt text](screens/image-44.png)
 
 Заходим в терминал frr
 
-![alt text](image-45.png)
+![alt text](screens/image-45.png)
 
 *работаем как в обычной Cisco IOS
 
@@ -283,7 +283,7 @@ mcedit /etc/net/sysctl.conf
 
 Затем пишем - sysctl -p
 
-![alt text](image-49.png)
+![alt text](screens/image-49.png)
 
 Затем пишем команду
 
@@ -301,27 +301,27 @@ useradd - создание пользователя
 
 Создаем пользователея с UID 1010
 
-![alt text](image-50.png)
+![alt text](screens/image-50.png)
 
 Изменяем пароль на пользователе (passwd sshuser)
 
-![alt text](image-51.png)
+![alt text](screens/image-51.png)
 
 *Проверяем какие группы пользователей могут пользоваться sudo без авторизации
 
-![alt text](image-52.png)
+![alt text](screens/image-52.png)
 
 Добавляем пользователя sshuser в группу
 
-![alt text](image-53.png)
+![alt text](screens/image-53.png)
 
 Проверяем что пользователь видится в двух группах
 
-![alt text](image-54.png)
+![alt text](screens/image-54.png)
 
 Даем пользователю права авторизации в sudo (root) без ввода пароля
 
-![alt text](image-55.png)
+![alt text](screens/image-55.png)
 
 Убираем комментарий с двух строчек
 
@@ -329,29 +329,29 @@ WHEEL_USERS ALL=(ALL:ALL) ALL
 
 WHEEL_USERS ALL=(ALL;ALL) NOPASSWD: ALL
 
-![alt text](image-56.png)
+![alt text](screens/image-56.png)
 
 *Проверяем доступ к авторизации без пароля к пользователю sshuser
 
-![alt text](image-57.png)
+![alt text](screens/image-57.png)
 
 ### Создайте пользователя net_admin на маршрутизаторах HQ-RTR и BR-RTR
 
 Создаем пользователя
 
-![alt text](image-58.png)
+![alt text](screens/image-58.png)
 
 Изменяем пароль на P@$$word
 
-![alt text](image-59.png)
+![alt text](screens/image-59.png)
 
 Добавляем пользователя в группу
 
-![alt text](image-60.png)
+![alt text](screens/image-60.png)
 
 Изменяем параметры прав
 
-![alt text](image-61.png)
+![alt text](screens/image-61.png)
 
 Убираем комментарий с двух строчек
 
@@ -359,47 +359,47 @@ WHEEL_USERS ALL=(ALL:ALL) ALL
 
 WHEEL_USERS ALL=(ALL;ALL) NOPASSWD: ALL
 
-![alt text](image-62.png)
+![alt text](screens/image-62.png)
 
 ## 4. Настройте на интерфейсе HQ-RTR в сторону офиса HQ виртуальный коммутатор: (пока на доработке, VLANы видит, отображает, но пинги не идут) *МОЖЕТ ЛУЧШЕ ЧЕРЕЗ openvswitch
 
 Для настройки будем использовать виртуальные интерфейсы. Создаем директории для подинтерфейсов .10 и .20
 
-![alt text](image-72.png)
+![alt text](screens/image-72.png)
 
-![alt text](image-73.png)
+![alt text](screens/image-73.png)
 
 Настраиваем IP-адрес для подинтерфейса .10
 
-![alt text](image-74.png)
+![alt text](screens/image-74.png)
 
-![alt text](image-75.png)
+![alt text](screens/image-75.png)
 
 Настраиваем файл options для подинтерфейса .10
 
-![alt text](image-76.png)
+![alt text](screens/image-76.png)
 
 По заданию сервер HQ-SRV должен находиться в ID VLAN 100
 
-![alt text](image-77.png)
+![alt text](screens/image-77.png)
 
 Настраиваем IP-адрес для подинтерфейса .20
 
-![alt text](image-79.png)
+![alt text](screens/image-79.png)
 
 По заданию клиент HQ-CLI в ID VLAN 200 
 
-![alt text](image-80.png)
+![alt text](screens/image-80.png)
 
 ### Создайте подсеть управления с ID VLAN 999
 
-![alt text](image-81.png)
+![alt text](screens/image-81.png)
 
 Скопируем файл options из .10
 
-![alt text](image-82.png)
+![alt text](screens/image-82.png)
 
-![alt text](image-83.png)
+![alt text](screens/image-83.png)
 
 
 
@@ -409,7 +409,7 @@ apt-get update - обновляем репозитории
 
 apt-get install openssh-server
 
-![alt text](image-63.png)
+![alt text](screens/image-63.png)
 
 *При установке, могут возникнуть ошибки с работой пакета, в таком случае пишем systemctl daemon-reload
 
@@ -417,25 +417,25 @@ apt-get install openssh-server
 
 Добавляем сервис в автозагрузку systemctl enable —now sshd
 
-![alt text](image-64.png)
+![alt text](screens/image-64.png)
 
 #### Настройка файла конфигурации OpenSSH
 
-![alt text](image-65.png)
+![alt text](screens/image-65.png)
 
 Открываем файл, находим атрибут #port 22 - изменяем его на "port 2024" # - убираем
 
-![alt text](image-66.png)
+![alt text](screens/image-66.png)
 
 ##### Ограничьте количество попыток входа до двух - меняем параметр с "6" на "2"
 
-![alt text](image-67.png)
+![alt text](screens/image-67.png)
 
 ##### Настройте баннер «Authorized access only». Находим #no default banner path
 
 Изменяем строчку, добавляя путь к файлу с данными по баннеру
 
-![alt text](image-68.png)
+![alt text](screens/image-68.png)
 
 Создаем файл с баннером
 
@@ -443,19 +443,19 @@ mcedit /etc/32admsbanner
 
 В него прописываем баннер по заданию
 
-![alt text](image-69.png)
+![alt text](screens/image-69.png)
 
 ##### Разрешите подключения только пользователю sshuser
 
 Добавляем строчку AllowUsers и пишем имя пользователя с доступом
 
-![alt text](image-70.png)
+![alt text](screens/image-70.png)
 
 После перезагружаем сервис systemctl restart sshd
 
 *Проверяем работу с другого устройства (HQ-RTR)
 
-![alt text](image-71.png)
+![alt text](screens/image-71.png)
 
 ## 6. Между офисами HQ и BR необходимо сконфигурировать ip туннель
 
@@ -479,19 +479,19 @@ DHCP — сетевой протокол, позволяющий сетевым 
 
 apt-get install dhcp-server
 
-![alt text](image-84.png)
+![alt text](screens/image-84.png)
 
 Добавляем в автозагрузку
 
-![alt text](image-85.png)
+![alt text](screens/image-85.png)
 
 Копируем файл example, создаем "чистовик" dhcpd.conf - он будет использоваться в качесвте конфигуратора DHCP сервера
 
-![alt text](image-86.png)
+![alt text](screens/image-86.png)
 
 Открываем вновь созданный файл
 
-![alt text](image-87.png)
+![alt text](screens/image-87.png)
 
 Производим настройку*
 
@@ -528,17 +528,17 @@ host SERVER {
 
 Выставляем сетевой адаптер, который будет работать на раздачу DHCP
 
-![alt text](image-89.png)
+![alt text](screens/image-89.png)
 
 Сетевой адаптер в сторону сети HQ-NET
 
-![alt text](image-90.png)
+![alt text](screens/image-90.png)
 
 *Проверяем на CLI
 
 IP-адрес был получен по DHCP с сервера
 
-![alt text](image-91.png)
+![alt text](screens/image-91.png)
 
 ## 10. Настройка DNS для офисов HQ и BR.
 
@@ -554,7 +554,7 @@ IP-адрес был получен по DHCP с сервера
 
 #### Пример заполнения таблицы адресов устройств
 
-![alt text](image-4.png)
+![alt text](screens/image-4.png)
 
 # Модуль 2 "Организация сетевого администрирования операционных систем"
 
