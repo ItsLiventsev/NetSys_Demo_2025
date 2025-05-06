@@ -153,7 +153,7 @@ domainname au-team.irpo
 
 ![alt text](screens/image-25.png)
 
-#### Настройка основного шлюза для статики
+#### Настройка основного шлюза для статики (НА ВСЕХ УСТРОЙСТВАХ - BR-RTR, HQ-RTR на ISP, сеть HQ - на HR-RTR, сеть BR - на BR-RTR
 
 ![alt text](screens/image-27.png)
 
