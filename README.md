@@ -929,7 +929,7 @@ apt-get install yandex-browser-stable
         echo "Активные пользователи:"
         who
         echo "Мой IP-адрес:"
-        ip addr show enp0s3 | grep "inet " | awk '{print $2}' | cut -d'/' -f1
+        ip addr show ens192 | grep "inet " | awk '{print $2}' | cut -d'/' -f1
         echo "Свободное место на диске:"
         df -h
         ```
